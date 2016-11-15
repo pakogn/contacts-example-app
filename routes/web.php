@@ -12,7 +12,7 @@
  */
 
 Route::get('/', ['as' => 'index', function () {
-    return 'Lista de contactos!';
+    return 'Contactos!';
 }]);
 
 Route::resource('contacts', 'ContactsController');

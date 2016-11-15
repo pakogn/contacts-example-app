@@ -4,6 +4,8 @@
 	<h1>Contactos</h1>
 
 	<ul>
-		<li>Todos los contactos!</li>
+		@foreach ($contacts as $contact)
+			<li>{{ $contact->name }}</li>
+		@endforeach
 	</ul>
 @stop
