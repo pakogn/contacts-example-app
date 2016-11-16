@@ -15,4 +15,8 @@ Route::get('/', ['as' => 'index', function () {
     return 'Contactos!';
 }]);
 
+Route::get('contacts/{contact}/confirm-deletion', [
+    'as' => 'contacts.confirm.destroy',
+    'uses' => 'ContactsController@confirmDestroy',
+]);
 Route::resource('contacts', 'ContactsController');

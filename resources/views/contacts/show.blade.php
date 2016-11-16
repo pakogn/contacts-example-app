@@ -12,7 +12,5 @@
 	</p>
 	<a href="{{ route('contacts.edit', $contact) }}">Editar</a>
 
-	{!! Form::open(['route' => ['contacts.destroy', $contact], 'method' => 'DELETE']) !!}
-		{!! Form::submit('Eliminar') !!}
-	{!! Form::close() !!}
+	<a href="{{ route('contacts.confirm.destroy', $contact) }}">Eliminar</a>
 @stop

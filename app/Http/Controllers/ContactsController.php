@@ -106,4 +106,11 @@ class ContactsController extends Controller
 
         return redirect()->route('contacts.index');
     }
+
+    public function confirmDestroy($id)
+    {
+        $contact = Contact::findOrFail($id);
+
+        return view('contacts.confirmDestroy', compact('contact'));
+    }
 }
