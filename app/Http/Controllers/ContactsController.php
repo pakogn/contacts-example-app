@@ -37,12 +37,7 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        $contact = new Contact;
-        $contact->name = $request->name;
-        $contact->phone = $request->phone;
-        $contact->email = $request->email;
-        $contact->group = $request->group;
-        $contact->save();
+        Contact::create($request->all());
 
         return redirect()->route('contacts.index');
     }
@@ -78,11 +73,7 @@ class ContactsController extends Controller
      */
     public function update(Request $request, Contact $contact)
     {
-        $contact->name = $request->name;
-        $contact->phone = $request->phone;
-        $contact->email = $request->email;
-        $contact->group = $request->group;
-        $contact->save();
+        $contact->update($request->all());
 
         return redirect()->route('contacts.show', $contact);
     }
