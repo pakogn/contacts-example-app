@@ -53,10 +53,8 @@ class ContactsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
-
         return view('contacts.show', compact('contact'));
     }
 
@@ -66,10 +64,8 @@ class ContactsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
-
         return view('contacts.edit', compact('contact'));
     }
 
@@ -80,9 +76,8 @@ class ContactsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
         $contact->name = $request->name;
         $contact->phone = $request->phone;
         $contact->email = $request->email;
@@ -98,19 +93,15 @@ class ContactsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
-
         $contact->delete();
 
         return redirect()->route('contacts.index');
     }
 
-    public function confirmDestroy($id)
+    public function confirmDestroy(Contact $contact)
     {
-        $contact = Contact::findOrFail($id);
-
         return view('contacts.confirmDestroy', compact('contact'));
     }
 }
