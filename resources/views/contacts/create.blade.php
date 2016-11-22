@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+	@include('errors.list')
+
 	{!! Form::open(['route' => 'contacts.store']) !!}
 		{!! Form::label('name', 'Nombre') !!}
 		{!! Form::text('name') !!}
