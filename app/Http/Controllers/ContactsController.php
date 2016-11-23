@@ -4,10 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\Http\Requests\StoreContactRequest;
+use App\Http\Requests\UpdateContactRequest;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('family', ['only' => ['show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -72,7 +78,7 @@ class ContactsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Contact $contact)
+    public function update(UpdateContactRequest $request, Contact $contact)
     {
         $contact->update($request->all());
 
