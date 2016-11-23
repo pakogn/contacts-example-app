@@ -10,4 +10,6 @@
 			<li><a href="{{ route('contacts.show', $contact) }}">{{ $contact->name }}</a></li>
 		@endforeach
 	</ul>
+
+	{!! $contacts->render() !!}
 @stop

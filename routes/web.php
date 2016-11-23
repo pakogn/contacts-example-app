@@ -20,3 +20,7 @@ Route::get('contacts/{contact}/confirm-deletion', [
     'uses' => 'ContactsController@confirmDestroy',
 ]);
 Route::resource('contacts', 'ContactsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

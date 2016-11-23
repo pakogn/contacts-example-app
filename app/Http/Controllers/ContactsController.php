@@ -12,6 +12,7 @@ class ContactsController extends Controller
     public function __construct()
     {
         $this->middleware('family', ['only' => ['show']]);
+        $this->middleware('auth');
     }
 
     /**
@@ -21,7 +22,7 @@ class ContactsController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::all();
+        $contacts = Contact::paginate(5);
 
         return view('contacts.index', compact('contacts'));
     }
