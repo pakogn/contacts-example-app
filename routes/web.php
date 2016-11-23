@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ContactMe;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,9 @@ Route::resource('contacts', 'ContactsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('send-my-contact-information', function () {
+    Mail::to('pako.gn@hotmail.com')->send(new ContactMe());
+
+    return 'Datos enviados!';
+});
