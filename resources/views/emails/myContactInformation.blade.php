@@ -292,9 +292,8 @@ Sizes: [
 															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
 																	<td align="center" valign="top" class="textContent">
-																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Introduction header</h1>
-																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;">Subheader introduction</h2>
-																		<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</div>
+																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Contacts</h1>
+																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;">Tus contactos a la mano...</h2>
 																	</td>
 																</tr>
 															</table>
@@ -333,21 +332,18 @@ Sizes: [
 															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox">
-																		<table border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="410" style="max-width: 100%;">
 																			<tr>
 																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Left Column</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																	<td align="right" valign="middle" class="flexibleContainerBox">
-																		<table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
-																			<tr>
-																				<td align="left" class="textContent">
-																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Right Column</h3>
-																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</div>
+																					<h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Hola!</h3>
+																					<div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
+																						Esta es mi información de contacto:
+																						<ul>
+																							<li>Nombre: Francisco Daniel García Noriega</li>
+																							<li>Teléfono: 271 123 45 67</li>
+																							<li>Email: pako.gn@hotmail.com</li>
+																						</ul>
+																					</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -388,7 +384,7 @@ Sizes: [
 																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																			<tr>
 																				<td valign="top" class="textContent">
-																					<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;">Empty row for your custom contents</div>
+																					<div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;margin-top:3px;color:#5F5F5F;line-height:135%;">Contáctame de lunes a viernes de 9 am a 8 pm</div>
 																				</td>
 																			</tr>
 																		</table>
@@ -441,7 +437,7 @@ Sizes: [
 																	<td valign="top" bgcolor="#E1E1E1">
 
 																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																			<div>Copyright &#169; 2014 <a href="http://www.charlesmudy.com/respmail/" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Respmail</span></a>. All&nbsp;rights&nbsp;reserved.</div>
+																			<div>Copyright &#169; 2016 <a href="http://www.charlesmudy.com/respmail/" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Contacts</span></a>. All&nbsp;rights&nbsp;reserved.</div>
 																			<div>If you do not want to recieve emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>
 																		</div>
 
