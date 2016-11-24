@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>{{ $contact->name }}</h1>
-	Grupo: <em>{{ $contact->group }}</em>
+	Grupo: <em>{{ $contact->group->name }}</em>
 
 	<p>
 		Teléfono: {{ $contact->phone }}

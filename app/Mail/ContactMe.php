@@ -28,6 +28,6 @@ class ContactMe extends Mailable
     public function build()
     {
         return $this->from('no-reply@contacs.com')
-            ->text('emails.myContactInformation');
+            ->view('emails.myContactInformation');
     }
 }

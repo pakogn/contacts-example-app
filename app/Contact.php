@@ -10,6 +10,11 @@ class Contact extends Model
         'name',
         'phone',
         'email',
-        'group',
+        'group_id',
     ];
+
+    public function group()
+    {
+        return $this->belongsTo(Group::class);
+    }
 }

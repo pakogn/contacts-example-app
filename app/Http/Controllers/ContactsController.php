@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Group;
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
 use Illuminate\Http\Request;
@@ -34,7 +35,9 @@ class ContactsController extends Controller
      */
     public function create()
     {
-        return view('contacts.create');
+        $groups = Group::pluck('name', 'id');
+
+        return view('contacts.create', compact('groups'));
     }
 
     /**
@@ -69,7 +72,9 @@ class ContactsController extends Controller
      */
     public function edit(Contact $contact)
     {
-        return view('contacts.edit', compact('contact'));
+        $groups = Group::pluck('name', 'id');
+
+        return view('contacts.edit', compact('contact', 'groups'));
     }
 
     /**

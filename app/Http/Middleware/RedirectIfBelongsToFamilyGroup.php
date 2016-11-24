@@ -17,7 +17,7 @@ class RedirectIfBelongsToFamilyGroup
     {
         $contact = $request->route('contact');
 
-        if ($contact->group == 'familia') {
+        if ($contact->group->name == 'Familia') {
             return redirect()->route('contacts.index');
         }
 
